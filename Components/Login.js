@@ -8,12 +8,10 @@ async function save(key, value) {
     await SecureStore.setItemAsync(key, value);
 }
 
-
-
 export default function Login(props) {
     const [isLogged, onChangeIsLogged] = React.useState(false);
-    const [username, onChangeLogin] = React.useState(null);
-    const [password, onChangePassword] = React.useState(null);
+    const [username, onChangeLogin] = React.useState('timothy');
+    const [password, onChangePassword] = React.useState('password_timothy');
 
     async function login(username, password) {
         fetch('http://192.168.1.20:8000/api/login_check', {

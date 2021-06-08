@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, TextInput, Button, StyleSheet, FlatList, Text} from 'react-native';
+import {View, TextInput, Button, StyleSheet, FlatList} from 'react-native';
 import FilmItem from './FilmItem'
 import films from '../Helpers/filmsData';
 function Search() {

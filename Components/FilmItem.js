@@ -3,7 +3,7 @@
 import React from 'react'
 import {Image, StyleSheet, Text, View} from 'react-native'
 
-function FilmItem({film}) {
+function FilmItem({wishList}) {
     return (
         <View style={styles.main_container}>
             <Image
