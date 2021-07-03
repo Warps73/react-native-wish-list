@@ -1,4 +1,4 @@
-import {Image, Text, TouchableOpacity, View, StyleSheet} from "react-native";
+import {Image, Text, TouchableOpacity, View, StyleSheet, Dimensions} from "react-native";
 import React from 'react'
 
 export default function Card(props) {
@@ -18,10 +18,11 @@ export default function Card(props) {
         </TouchableOpacity>
     );
 }
-
+const {height, width} = Dimensions.get('window');
+const itemWidth = (width - 15) / 2;
 const styles = StyleSheet.create({
     container : {
-        flex: 1,
+        width: itemWidth,
         height : 200,
         marginLeft: 15,
         marginRight: 15,
